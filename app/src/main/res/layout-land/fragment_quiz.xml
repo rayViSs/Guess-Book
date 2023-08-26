@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.QuizFragment">
+
+    <ImageView
+        android:id="@+id/upImageBooks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/flying_books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenterVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <TextView
+        android:id="@+id/firstTitleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/moderne_demi"
+        android:text="@string/first_line_example"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/main_color"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCenterVert" />
+
+
+    <ImageButton
+        android:id="@+id/imgCoverBook1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/dzhejn_ejr"
+        app:layout_constraintHeight_percent="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCoverBook2"
+        app:layout_constraintWidth_percent="0.20" />
+
+
+    <ImageButton
+        android:id="@+id/imgCoverBook2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/anna_karenina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgCoverBook3"
+        app:layout_constraintHeight_percent="0.28"
+        app:layout_constraintStart_toEndOf="@+id/imgCoverBook1"
+        app:layout_constraintWidth_percent="0.20" />
+
+    <ImageButton
+        android:id="@+id/imgCoverBook3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/gordost_i_predubezhdenie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.28"
+        app:layout_constraintTop_toTopOf="@+id/imgCoverBook2"
+        app:layout_constraintWidth_percent="0.20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
